@@ -15,7 +15,8 @@ if(tuser == user and tpassw == passw or tuser == "admin" and tpassw == "admin"):
         print("3.Delete record")
         print("4.Exit")
         print("------------------------------>")
-        ch=input("Enter your choice :")
+        print("Enter your choice...")
+        ch=int(input())
         print("--------------------->")
         if (ch == 1):
             print("added")
