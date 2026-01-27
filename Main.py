@@ -1,3 +1,15 @@
+import os 
+
+if os.path.exists("data.txt"):
+    print("file exists")
+    # continue to login
+else:
+    print("file dont exists")
+    #create a new file and save it and its setup
+    f = open("data.txt","w")
+    f.write(user +"\n")
+    f.write(passw)
+    
 print("Student-Record-Managing-System")
 user=input("set the new username : ")
 passw=input("set the new password : ")
