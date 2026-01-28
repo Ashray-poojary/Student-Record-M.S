@@ -1,14 +1,33 @@
 import os 
+import time as t
 
-if os.path.exists("data.txt"):
-    print("file exists")
-    # continue to login
+print("Student Record Management System")
+
+if os.path.exists(".data.txt"):
+    c_user = input("Username : ")
+    c_passw = input("Password : ")
+    t.sleep(2)
+    f = open(".data.txt","r")
+    r_user = f.readline().strip()
+    r_passw = f.readline().strip()
+    
+    if (c_user == r_user and c_passw == r_passw):
+        print("Access granted")
+    else:
+        print("Access denied")
+        exit(0)
+    f.close()
+    
+   
 else:
-    print("file dont exists")
-    #create a new file and save it and its setup
-    f = open("data.txt","w")
-    f.write(user +"\n")
-    f.write(passw)
+    print("Set up your system access")
+    user = input("Enter username:")
+    passw = input("Enter password:")
+    f1 = open(".data.txt","w")
+    f1.write(user + "\n")
+    f1.write(passw)
+    f1 = open(".data.txt","r")
+    f1.close()
     
 print("Student-Record-Managing-System")
 user=input("set the new username : ")
