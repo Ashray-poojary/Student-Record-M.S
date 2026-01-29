@@ -1,16 +1,22 @@
-import os 
+import os
+import getpass as g
 
 if not os.path.exists(".data.txt"):
     print("Set up your system access")
     user = input("Enter username:")
-    passw = input("Enter password:")
-    f1 = open(".data.txt","w")
-    f1.write(user + "\n")
-    f1.write(passw)
-    f1 = open(".data.txt","r")
-    r_user = f1.readline().strip()
-    r_passw = f1.readline().strip()
-    f1.close()
+    passw = g.getpass("Enter password:")
+    cpassw = g.getpass("Confirm password : ")
+    if (passw == cpassw):
+        f1 = open(".data.txt","w")
+        f1.write(user + "\n")
+        f1.write(passw)
+        f1 = open(".data.txt","r")
+        r_user = f1.readline().strip()
+        r_passw = f1.readline().strip()
+        f1.close()
+    else:
+        print("put your glasses, then try.")
+        exit(0)
 else:
     f = open(".data.txt","r")
     r_user = f.readline().strip()
@@ -22,7 +28,7 @@ i = 0
 while(True):
     print("Authentication.....")
     c_user = input("username : ")
-    c_passw = input("password : ")
+    c_passw = g.getpass("password : ")
     
     if(c_user == r_user and c_passw == r_passw):
         print("granted")
