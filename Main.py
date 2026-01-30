@@ -40,7 +40,7 @@ while(True):
             print("exiting.....!!!!!")
             exit(0)
             
-print("student record management system")
+print("Welcome user")
 print("----------------------------------------------------------->")
 while(1):
     
