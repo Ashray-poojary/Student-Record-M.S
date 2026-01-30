@@ -43,24 +43,29 @@ while(True):
 print("Welcome user")
 print("----------------------------------------------------------->")
 while(1):
-    
     print("1.Add record")
     print("2.Display record")
     print("3.Delete record")
     print("4.Exit")
     print("------------------------------>")
-    print("Enter your choice...")
-    ch=int(input())
-    print("--------------------->")
-    if (ch == 1):
-        print("added")
-    elif (ch == 2):
-        print("deleted")
-    elif (ch == 3):
-        print("display")
-    elif (ch == 4):
-        exit(0)
+    ch = input("Enter your choice.....")
+    if ch.isdigit():
+        ch = int(ch)
+        print("--------------------->")
+        if (ch == 1):
+        #add function here for adding
+            print("added")
+        elif (ch == 2):
+        #add deletion function here
+            print("deleted")
+        elif (ch == 3):
+        #add display function here
+            print("display")
+        elif (ch == 4):
+            exit(0)
+        else:
+            print("Invlid option")
     else:
-        print("Invlid option")
+        print("Enter choice from (1,2,3,4) : ")
 
 
