@@ -51,14 +51,19 @@ class Student:
 students = []
 
 def add_student():
-    roll = input("Enter Roll No : ")
-    name = input("Enter Name : ")
-    phone = input("Enter Phone : ")
+    lp = input("Enter how many records to add : ")
+    lp = int(lp)
+    for i in range(lp):
+        #roll uniqueness code has to be added
+        
+        roll = input("Enter Roll No : ")
+        name = input("Enter Name : ")
+        phone = input("Enter Phone : ")
 
-    s = Student(roll, name, phone)
-    students.append(s)
+        s = Student(roll, name, phone)
+        students.append(s)
 
-    print("Student Added Successfully...\n")
+        print("Student Added Successfully...\n")
     
     
 def delete_student():
@@ -83,7 +88,7 @@ def display_students():
 
     print("\nStudent List")
     for s in students:
-        print(" Roll : ", s.roll, " Name : ", s.name, " Phone : ", s.phone)
+        print(" Roll : ", s.roll, "\t\tName : ", s.name, "\t\tPhone : ", s.phone)
     print()
     
 def search_student():
