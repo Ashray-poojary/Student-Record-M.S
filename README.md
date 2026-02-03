@@ -13,7 +13,7 @@ building a real, usable console application.
 
 This project helped me practice:
 
--   os module\
+-   os module
 -   getpass (for hidden password input)\
 -   File Handling\
 -   Functions\
