@@ -18,6 +18,7 @@ This project helped me practice:
 -   File Handling\
 -   Functions\
 -   Python Basics & Logic Building
+-   Git\
 
 ------------------------------------------------------------------------
 
