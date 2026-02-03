@@ -14,11 +14,11 @@ building a real, usable console application.
 This project helped me practice:
 
 -   os module
--   getpass (for hidden password input)\
--   File Handling\
--   Functions\
+-   getpass (for hidden password input)
+-   File Handling
+-   Functions
 -   Python Basics & Logic Building
--   Git\
+-   Git
 
 ------------------------------------------------------------------------
 
@@ -27,21 +27,21 @@ This project helped me practice:
 The program allows you to:
 
 -   Add student records
-    -   Roll Number\
-    -   Name\
-    -   Phone Number\
--   Add multiple records continuously\
--   Delete a record using Roll Number\
--   Search for a student using Roll Number\
--   Display all added records\
+    -   Roll Number
+    -   Name
+    -   Phone Number
+-   Add multiple records continuously
+-   Delete a record using Roll Number
+-   Search for a student using Roll Number
+-   Display all added records
 -   Exit the program safely
 
 ------------------------------------------------------------------------
 
 ## Authentication System
 
--   Username and password are set once\
--   Credentials are stored and reused on next runs\
+-   Username and password are set once
+-   Credentials are stored and reused on next runs
 -   Uses file handling to avoid re-registering every time
 
 > Note: Credentials are stored in a simple text file for learning
@@ -67,9 +67,9 @@ The program allows you to:
 
 ## Disadvantages
 
--   No permanent storage for student records\
--   No data uniqueness check (duplicate roll numbers possible)\
--   Not secure for real-world authentication\
+-   No permanent storage for student records
+-   No data uniqueness check (duplicate roll numbers possible)
+-   Not secure for real-world authentication
 -   Not scalable for large datasets
 
 ------------------------------------------------------------------------
@@ -78,9 +78,9 @@ The program allows you to:
 
 This project was built to:
 
--   Improve Python fundamentals\
--   Understand how CRUD operations work\
--   Learn program structure using functions\
+-   Improve Python fundamentals
+-   Understand how CRUD operations work
+-   Learn program structure using functions
 -   Practice file handling and user authentication logic
 
 This is part of my **upskilling journey**
@@ -89,10 +89,10 @@ This is part of my **upskilling journey**
 
 ## Future Improvements (Planned)
 
--   Store student data in files or databases\
--   Add roll number uniqueness validation\
--   Improve security for login system\
--   Add edit/update record feature\
+-   Store student data in files or databases
+-   Add roll number uniqueness validation
+-   Improve security for login system
+-   Add edit/update record feature
 -   Convert to GUI or web app
 
 ------------------------------------------------------------------------
