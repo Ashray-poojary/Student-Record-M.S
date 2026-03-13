@@ -144,5 +144,4 @@ while(1):
 
 #thus program can only store data during its running or execution not permanently 
 #hence its fast for add,delete,search,display operations
-#learning is a process 
 
